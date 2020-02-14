@@ -70,8 +70,8 @@ body, h1 {
 
 .selector {
   padding-left: .5em;
+  margin-left: -.8px;
   border: 1px solid black;
-  border-left-style: none;
 }
 
 .selector label {
