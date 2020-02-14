@@ -1,0 +1,101 @@
+@font-face {
+  font-family: encabezado;
+  src: url(../fonts/MeriendaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: fuente-negrita;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: fuente;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+:root {
+  font-family: fuente, sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, h1 {
+  margin: 0;
+}
+
+.main_menu {
+  background-color: #701d1d;
+}
+
+.main_menu h1 {
+  font-family: encabezado, sans-serif;
+  color: #e6dcdc;
+  line-height: 3em;
+  text-align: center;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1em;
+}
+
+.tabla_precios {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.tabla_precios thead {
+  font-family: fuente-negrita,sans-serif;
+}
+
+.tabla_precios td, .tabla_precios th {
+  height: 1.5rem;
+  border: 1px solid black;
+}
+
+.tabla_precios tbody th {
+  text-align: left;
+  font-weight: normal;
+}
+
+.selector {
+  padding-left: .5em;
+  border: 1px solid black;
+  border-left-style: none;
+}
+
+.selector label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5rem;
+}
+
+.selector select, .selector input {
+  height: 1.5rem;
+  width: 90%;
+}
+
+@media screen and (max-width: 30.6rem) {
+  .tabla_precios, .selector {
+    width: 20rem;
+  }
+  .selector {
+    margin-top: .5em;
+    border-left-style: solid;
+  }
+}
+/*# sourceMappingURL=style.css.map */

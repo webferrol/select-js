@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Selectores</title>
+</head>
+<body>
+    <main class="container">
+        <header class="main_menu">
+            <h1>Pizzería WebFerrol</h1>
+        </header>
+        <div class="content">
+            <table class="tabla_precios">
+                <thead>
+                    <tr>
+                        <th colspan="2">Tarifa de precios</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Jamón y queso</th>
+                        <td>4 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mozzarella</th>
+                        <td>3 €</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Morrones</th>
+                        <td>2 €</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Los precios son revisados una vez a la semana</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="selector">
+                <label for="pizzas">Pizas</label>
+                <select name="pizzas" id="pizzas">
+                    <option value="4 €">Jamón y queso</option>
+                    <option value="2 €">Mozzarella</option>
+                    <option value="3 €">Morrones</option>
+                </select>
+                <label for="precios">Precios</label>
+                <input type="text" id="precios" value="" disabled name="precios">
+            </div>
+        </div>
+    </main>
+    <script src="js/fichero.js"></script>
+</body>
+</html>
